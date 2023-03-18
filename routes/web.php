@@ -49,3 +49,11 @@ Route::get('/password/{password}', function($password) {
 Route::get('password/', function(){
     echo 'Hmmmmm... I NEED TO SEE YOUR PASSWORD!!!!!!!!!!';
 });
+
+Route::get("/hello/{name}", function($name){
+    echo "Hello, ".$name."!";
+});
+
+Route::get("/hello", function(){
+    echo "Hello, wrld!";
+});
